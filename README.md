@@ -5,3 +5,4 @@
 3. tuples
 4. dictionaries
 5. sets
+6. loops
