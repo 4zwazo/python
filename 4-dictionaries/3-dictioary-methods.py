@@ -28,11 +28,11 @@ print(b_emp_dict)
 
 # get a view of the dictionary items
 new_dict = a_emp_dict.items();
-print(new_dict)
+print(f"new dict {new_dict}")
 
 # get a view of the dictionary keys
 key_dict = a_emp_dict.keys()
-print(key_dict)
+print(f"key_dict {key_dict}")
 
 # get a view of the dictionary values
 val_dict = a_emp_dict.values()
