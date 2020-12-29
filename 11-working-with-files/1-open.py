@@ -3,6 +3,14 @@
   open a file
 '''
 
+# open the file, but remember to close it
+file_path = 'example.txt'
+open_file = open(file_path, 'r')
+text = open_file.read()
+print(len(text))
+open_file.close()
+
+# other variants
 try:
   file_handler = open('sample.txt', encoding='utf8')
 except:
