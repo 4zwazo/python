@@ -3,13 +3,15 @@ from pytz import timezone
 from timezonefinder import TimezoneFinder
 from sunnyday import Weather
 from random import uniform
+from folium import Marker
 
-class Geopoint:
+class Geopoint(Marker):
 
     latitude_range = (-74.11, 74.11)
     longiture_range = (-18.64, 18.64)
 
     def __init__(self, longitude, latitude):
+        super().__init__(location =[latitude, longitude])
         self.longitude = longitude
         self.latitude = latitude
 
@@ -32,10 +34,3 @@ class Geopoint:
     def random(cls):
         return cls(latitude = uniform(-74.11, 74.11), longitude = uniform(-18.64, 18.64))
 
-    @
-haiti = Geopoint(longitude=-74.11, latitude=18.64)
-print(haiti.get_city())
-print(haiti.get_time())
-print(haiti.get_weather())
-print(Geopoint.random().get_city())
-# d10353de4689668912054bc9dafd5439
